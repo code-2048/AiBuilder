@@ -22,4 +22,4 @@ Model feature files database ｜ folder ｜ In this folder, we save all the deco
 
 Model feature files database (filtered) ｜ folder ｜ We filter the model files which are less than one edge. ｜20220
 
-* As github limit the single file to 25MB， some large files can not be uploaded. if you need the full dataset, please contact us.
+* because github limits the single file to 25MB， some large files can not be uploaded. if you need the full dataset, please contact us.
