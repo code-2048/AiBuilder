@@ -4,22 +4,15 @@ With this dataset, developers could analyze the potential relationship among the
 
 # Structure of the dataset
 
-Name｜Type｜Description｜Items #  
+| Name      | Type | Description  | Items # | filename |
+| ----------- | ----------- |----------- |----------- |  ----------- | 
+| Paper basic database | Json file  | We use arxiv id of each paper as the main key in this database.   | 3038 |main/paper_db.json | 
+| Project basic database | Json file  | We use repository URL of each GitHub project as the main key in this database. | 11644 |main/repo_db.json| 
+| Project folder info database | Json file  | This file consists of the file count in each project.   | 11644 |main/folder_info_db.json| 
+| Project folder info database (extend version) | Json file  | This file has two extra attributes of file paths tree and readme files info.  | 11644 || 
+| Project model file database | Json file  | This file provides the relationship between project and model files by the only filename. | 11644 || 
+| Model feature files database | folder | In this folder, we save all the decoded model files. | 43216 || 
+| Model feature files database (filtered) | folder | We filter the model files which are less than two edge. | 20220 |main/model_feature_files/| 
 
-Paper basic database ｜ Json file ｜We use arxiv id of each paper as the main key
-in this database. ｜3038
-
-Pro ject basic database ｜ Json file ｜ We use repository URL of each GitHub project as the main key in this database. ｜ 11644  
-
-Pro ject folder info database ｜ Json file ｜ This file consists of the file count in each project. ｜ 11644  
-
-Project model file database (extend version) ｜ Json file ｜ This file has two extra attributes of file
-paths tree and readme files info. ｜ 11644  
-
-Project model file database ｜ Json file ｜ This file provides the relationship between project and model files by the only filename. ｜ 11644  
-
-Model feature files database ｜ folder ｜ In this folder, we save all the decoded model files. ｜ 43216  
-
-Model feature files database (filtered) ｜ folder ｜ We filter the model files which are less than one edge. ｜20220
 
 * because github limits the single file to 25MB， some large files can not be uploaded. if you need the full dataset, please contact us.
